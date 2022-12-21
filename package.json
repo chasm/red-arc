@@ -1,5 +1,5 @@
 {
-	"name": "@example/basics",
+	"name": "ved-arc",
 	"version": "0.0.1",
 	"private": true,
 	"type": "module",
@@ -10,13 +10,12 @@
 		"check:packages": "npx npm-check -u",
 		"dev": "astro dev",
 		"fmt": "dprint fmt",
-		"lambda": "tsc -p ./lambda/tsconfig.json",
 		"lint": "deno lint",
 		"preview": "astro preview",
 		"start": "astro dev",
 		"test": "pnpm test:int && p test:e2e",
 		"test:cov": "vitest run --coverage",
-		"test:e2e": "pnpm dlx playwright test && pnpm dlx playwright show-report",
+		"test:e2e": "pnpm build && pnpm dlx playwright test && pnpm dlx playwright show-report",
 		"test:int": "vitest"
 	},
 	"devDependencies": {

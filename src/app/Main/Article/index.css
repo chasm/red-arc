@@ -1,0 +1,25 @@
+article {
+	margin: 0;
+	font-family: "Roboto","Helvetica","Arial",sans-serif;
+	font-weight: 500;
+	font-size: 1.25rem;
+	line-height: 1.6;
+	letter-spacing: 0.0075em;
+	text-align: center;
+	font-weight: 500;
+	padding-bottom: 32px;
+}
+
+article > header > h2 {
+	margin: 0;
+	padding: 0;
+}
+
+article.centered {
+	margin: auto;
+	width: 50ch;
+}
+
+article.centered > * + * {
+	margin: 0 auto 1.5rem;
+}

@@ -1,0 +1,23 @@
+div.card {
+	align-items: flex-start;
+	background-size: cover;
+	display: flex;
+	flex-basis: 32%;
+	justify-content: center;
+	height: 12.5rem;
+	margin-bottom: 2rem;
+	overflow: hidden;
+}
+
+div.card h3 {
+	background: var(--color-black, hsla(0, 0%, 0%, 0.8));
+	color: var(--color-white, hsl(0, 0%, 100%));
+	font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+	font-size: 1.5rem;
+	font-weight: 400;
+	letter-spacing: 0;
+	line-height: 1.334;
+	padding: 0.625rem;
+	width: 70%;
+	margin: 15%;
+}

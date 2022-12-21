@@ -1,0 +1,17 @@
+---
+import "./index.css";
+
+export type Props = {
+	title: string;
+};
+
+const { title } = Astro.props;
+---
+
+<header class="hero">
+	<div>
+		<slot name="pre" />
+		<h2>{title}</h2>
+		<slot />
+	</div>
+</header>

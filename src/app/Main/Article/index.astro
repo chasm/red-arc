@@ -1,0 +1,22 @@
+---
+import "./index.css";
+
+export type Props = {
+	title?: string;
+	type?: string;
+};
+
+const { title, type } = Astro.props;
+const types = type ? { class: type } : {};
+---
+
+<article {...types}>
+	{
+		title ? (
+			<header>
+				<h2>{title}</h2>
+			</header>
+		) : null
+	}
+	<slot />
+</article>

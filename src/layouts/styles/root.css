@@ -1,0 +1,22 @@
+:root {
+	--color-black: hsl(0, 0%, 0%);
+	--color-blue: hsl(210, 79%, 35%);
+	--color-orange: hsl(27, 98%, 48%);
+	--color-red: hsl(0, 80%, 38%);
+	--color-purple: hsl(291, 64%, 39%);
+	--color-white: hsl(0, 0%, 100%);
+
+	--background-color-button-primary: var(--color-blue, hsl(210, 79%, 35%));
+	--background-color-button-secondary: var(--color-red, hsl(0, 80%, 38%));
+	--background-color-button-tertiary: var(--color-purple, hsl(291, 64%, 39%));
+	--background-color-header: var(--color-black, hsl(0, 0%, 0%));
+
+	--border-color-link-button: var(--color-orange, hsl(27, 98%, 48%));
+	--border-color-button-primary: var(--color-blue, hsl(210, 79%, 35%));
+	--border-color-button-secondary: var(--color-red, hsl(0, 80%, 38%));
+	--border-color-button-tertiary: var(--color-purple, hsl(291, 64%, 39%));
+
+	--color-body-text: var(--color-black, hsl(0, 0%, 0%));
+	--color-header: var(--color-white, hsl(0, 0%, 100%));
+	--color-link-button: var(--color-orange, hsl(27, 99%, 28%));
+}

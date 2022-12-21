@@ -1,0 +1,17 @@
+---
+import "./index.css";
+
+export type Props = {
+	color: string;
+	href: string;
+	label: string;
+	type: string;
+};
+
+const { color, href, label, type } = Astro.props;
+
+const button = [type, color].filter((v) => v).join(" ");
+const types = button ? { class: button } : {};
+---
+
+<a {...types} href={href}>{label}</a>

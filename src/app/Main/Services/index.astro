@@ -1,0 +1,34 @@
+---
+import "./index.css";
+
+import Card from "./Card/index.astro";
+---
+
+<article class="services">
+	<header>
+		<h2>Our services</h2>
+	</header>
+	<div class="service-cards">
+		<Card
+			background="cloud-operating-model.webp"
+			title="Cloud Operating Model"
+		/>
+		<Card background="cyber-security.webp" title="Cyber Security" />
+		<Card
+			background="strategy-and-architecture.webp"
+			title="Strategy and Architecture"
+		/>
+		<Card
+			background="managed-architecture-services.webp"
+			title="Managed Architecture Services (MaaS)"
+		/>
+		<Card
+			background="architecture-practice-and-governance.webp"
+			title="Architecture Practice and Governance"
+		/>
+		<Card
+			background="application-transformation.webp"
+			title="Application Transformation"
+		/>
+	</div>
+</article>

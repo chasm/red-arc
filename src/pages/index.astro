@@ -1,0 +1,43 @@
+---
+import Layout from "../layouts/index.astro";
+import Article from "../app/Main/Article/index.astro";
+import Box from "../app/Main/Box/index.astro";
+import Button from "../app/Main/Button/index.astro";
+import Hero from "../app/Main/Hero/index.astro";
+import Services from "../app/Main/Services/index.astro";
+---
+
+<Layout title="VedArc">
+	<Hero title="Digital transformation through cloud">
+		<Button
+			color="primary"
+			href="/contact"
+			label="Work with us"
+			type="call-to-action"
+		/>
+	</Hero>
+	<Article title="Welcome to VedArc" type="centered">
+		<p>
+			We're here to help you and your team evaluate, establish, and evolve your
+			ICT architecture ecosystems.
+		</p>
+		<p>Enabling you to deliver effective outcomes for your organization.</p>
+		<Button
+			color="secondary"
+			href="/get-started"
+			label="Get started"
+			type="call-to-action"
+		/>
+	</Article>
+	<Services />
+	<Box title="Here's what you need">
+		<p class="pre" slot="pre">We Help You</p>
+		<p>Experience the Best</p>
+		<Button
+			color="tertiary"
+			href="/check-it-out"
+			label="Check it out"
+			type="call-to-action"
+		/>
+	</Box>
+</Layout>

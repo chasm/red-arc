@@ -1,0 +1,23 @@
+---
+import "./index.css";
+
+const { pathname } = Astro.url;
+---
+
+<h1 class="logotype">
+	{
+		pathname === "/" ? (
+			<>
+				<span class="ved">Ved</span>
+				<span class="arc">Arc</span>
+			</>
+		) : (
+			<a href="/" aria-label="To the VedArc home page.">
+				<>
+					<span class="ved">Ved</span>
+					<span class="arc">Arc</span>
+				</>
+			</a>
+		)
+	}
+</h1>

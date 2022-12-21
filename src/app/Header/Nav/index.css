@@ -1,0 +1,47 @@
+body > header > nav {
+	flex-basis: 40rem;
+}
+
+body > header > nav > ul {
+	align-items: center;
+	display: flex;
+	font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+	font-size: 0.875rem;
+	font-stretch: 100%;
+	font-weight: 500;
+	justify-content: space-between;
+	letter-spacing: 0.39998px;
+	line-height: 1.5;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+body > header > nav > ul > li {
+	display: inline-block;
+	line-height: 1.75;
+	text-align: right;
+}
+
+body > header > nav > ul > li a {
+	align-items: center;
+	color: var(--color-header-nav-link, hsl(0, 0%, 100%));
+	display: flex;
+	justify-content: center;
+	min-height: 3rem;
+	min-width: 3rem;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+body > header > nav > ul > li a .link-button {
+	border: 1px solid var(--border-color-link-button, var(--color-orange, hsl(27, 99%, 28%)));
+	border-radius: 4px;
+	color: var(--color-link-button, var(--color-orange, hsl(27, 99%, 28%)));
+	padding: 0.3125rem 0.9375rem;
+}
+
+body > header > nav > ul > li a svg {
+	height: 1.5rem;
+	width: 1.5rem;
+}

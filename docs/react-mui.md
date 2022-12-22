@@ -1,40 +1,38 @@
 # React-MUI version
 
 Here is the HTML as output from the React/MUI build. It is **3819 lines!** That
-is more than **twenty-two** (22) _times_ bigger than the Astro version. Note the
-nested `div` elements. Not only are these deeply nested _for no good reason_,
-but they also are non-semantic. A `div` has no meaning. It's generic. Whereas
-`article`, `section`, `blockquote`, `header`, `footer`, `main`, `nav` all have
-specific meanings that are important for machine-readability (SEO) and
-accessibility. MUI is an abomination. Others are better, but not by much.
+is more than **sixteen (16) times bigger** than the Astro version.
 
-To be fair, this implements some responsiveness and the navigation drawer that I
-didn't bother with, but that adds _at most_ 100-200 lines, so the React version
-remains at least **ten times bigger**.
+Note the deeply nested `div` elements. Not only are these deeply nested _for no
+good reason_, but they also are non-semantic. A `div` has no meaning. It's
+generic. Whereas `article`, `section`, `blockquote`, `header`, `footer`, `main`,
+`nav` all have specific meanings that are important for machine-readability
+(SEO) and accessibility. **MUI is an abomination**. Others are better, but not
+by much.
 
 ```html
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="/vedarc-p1/favicon.ico" />
+    <link rel="icon" href="/redarc-p1/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
       content="Web site created using create-react-app"
     />
-    <link rel="apple-touch-icon" href="/vedarc-p1/logo192.png" />
+    <link rel="apple-touch-icon" href="/redarc-p1/logo192.png" />
     <!--
     manifest.json provides metadata used when your web app is installed on a
     user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
   -->
-    <link rel="manifest" href="/vedarc-p1/manifest.json" />
+    <link rel="manifest" href="/redarc-p1/manifest.json" />
     <!--
-    Notice the use of /vedarc-p1 in the tags above.
+    Notice the use of /redarc-p1 in the tags above.
     It will be replaced with the URL of the `public` folder during the build.
     Only files inside the `public` folder can be referenced from the HTML.
 
-    Unlike "/favicon.ico" or "favicon.ico", "/vedarc-p1/favicon.ico" will
+    Unlike "/favicon.ico" or "favicon.ico", "/redarc-p1/favicon.ico" will
     work correctly both with client-side routing and a non-root public URL.
     Learn how to configure a non-root public URL by running `npm run build`.
   -->
@@ -44,7 +42,7 @@ remains at least **ten times bigger**.
     />
 
     <title>React App</title>
-    <script defer="" src="/vedarc-p1/static/js/bundle.js"></script>
+    <script defer="" src="/redarc-p1/static/js/bundle.js"></script>
     <style>
       body {
         margin: 0;
@@ -2491,7 +2489,7 @@ remains at least **ten times bigger**.
                   class="MuiTypography-root MuiTypography-h4 css-1vtqco2-MuiTypography-root"
                 >
                   <a href="#/" style="text-decoration: none; color: white"
-                    >Ved<b style="color: orange">Arc</b></a
+                    >Red<b style="color: orange">Arc</b></a
                   >
                 </div>
                 <div class="MuiBox-root css-fv3lde">
@@ -2654,7 +2652,7 @@ remains at least **ten times bigger**.
               <h4
                 class="MuiTypography-root MuiTypography-h4 MuiTypography-alignCenter css-1xa4opg-MuiTypography-root"
               >
-                Welcome to VedArc.
+                Welcome to RedArc.
               </h4>
               <h6
                 class="MuiTypography-root MuiTypography-h6 MuiTypography-alignCenter css-io42v5-MuiTypography-root"
@@ -2821,7 +2819,7 @@ remains at least **ten times bigger**.
               <p
                 class="MuiTypography-root MuiTypography-body2 MuiTypography-alignCenter css-1ejlgzc-MuiTypography-root"
               >
-                Copyright © 2022 VedArc Inc. All rights reserved.
+                Copyright © 2022 RedArc Inc. All rights reserved.
               </p>
             </address>
           </footer>
@@ -2859,7 +2857,7 @@ remains at least **ten times bigger**.
           <h6
             class="MuiTypography-root MuiTypography-h6 css-1shjrxt-MuiTypography-root"
           >
-            Ved<b style="color: orange">Arc</b>
+            Red<b style="color: orange">Arc</b>
           </h6>
           <hr
             class="MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root"

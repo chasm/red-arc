@@ -8,9 +8,9 @@ test("homepage has title and header", async ({ page }) => {
 
 	await page.goto("http://localhost:3000/")
 
-	await expect(page).toHaveTitle(/^VedArc$/)
+	await expect(page).toHaveTitle(/^RedArc$/)
 
 	const logo = page.locator("body > header > h1.logotype")
 
-	await expect(logo).toHaveText(/VedArc/)
+	await expect(logo).toHaveText(/RedArc/)
 })

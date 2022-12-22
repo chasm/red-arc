@@ -1,7 +1,7 @@
-import mdx from "@astrojs/mdx"
-import sitemap from "@astrojs/sitemap"
 import compress from "astro-compress"
 import { defineConfig } from "astro/config"
+import mdx from "@astrojs/mdx"
+import sitemap from "@astrojs/sitemap"
 
 // https://astro.build/config
 export default defineConfig({
@@ -11,5 +11,5 @@ export default defineConfig({
 		},
 	},
 	integrations: [mdx(), sitemap(), compress()],
-	site: "https://vedarc.io/",
+	site: "https://redarc.io/",
 })

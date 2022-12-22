@@ -1,4 +1,4 @@
-# VedArc Astro/TypeScript proof of concept
+# RedArc Astro/TypeScript proof of concept
 
 **For a comparison of the two approaches &ndash; Astro/TypeScript vs.
 React/ReactRouter/MUI &ndash; see [Comparison](./docs/comparison.md).**
@@ -36,8 +36,8 @@ which is mutable.
 
 Pages can be found in `src/pages`. The folder name is the path. For example:
 
-- `pages/index.astro` is served at `/`.
-- `pages/about/index.astro` is served at `/about`.
+- `pages/index.astro` is serred at `/`.
+- `pages/about/index.astro` is serred at `/about`.
 
 This is a multi-page, static app, so there is no router. To link to a page,
 simply use the anchor element:

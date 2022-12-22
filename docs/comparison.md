@@ -81,7 +81,7 @@ easily fixed.)
 
 ![Astro in Lynx](./lynx-astro.png)
 
-I could easily make the service a list (but still look the same to visual
+I could easily make the services links (but still look the same to visual
 users).
 
 ## Them nesting issues

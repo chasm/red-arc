@@ -9,7 +9,7 @@ main > header.hero {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	height: 50rem;
+	min-height: clamp(25.00rem, calc(4.59rem + 102.04vw), 50.00rem);
 }
 
 main > header.hero > div {
@@ -18,14 +18,14 @@ main > header.hero > div {
 	color: var(--color-body-text, var(--color-black, hsl(0, 0%, 0%)));
 	display: flex;
 	flex-direction: column;
-	height: 23.75rem;
+	height: clamp(15.00rem, calc(7.86rem + 35.71vw), 23.75rem);
 	justify-content: center;
-	width: 44.5rem;
+	width: min(44.5rem, 90vw);
 }
 
 main > header.hero h2 {
 	font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-	font-size: 3.8rem;
+	font-size: clamp(1.50rem, calc(-0.34rem + 9.18vw), 3.75rem);
 	font-weight: 600;
 	line-height: 1.2;
 	margin: 1rem auto 2rem;

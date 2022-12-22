@@ -1,4 +1,4 @@
-div.card {
+li.card {
 	align-items: flex-start;
 	background-size: cover;
 	display: flex;
@@ -9,8 +9,8 @@ div.card {
 	overflow: hidden;
 }
 
-div.card h3 {
-	background: var(--color-black, hsla(0, 0%, 0%, 0.8));
+li.card h3 {
+	background: var(--color-black-transparent, hsla(0, 0%, 0%, 0.8));
 	color: var(--color-white, hsl(0, 0%, 100%));
 	font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 	font-size: 1.5rem;
@@ -20,4 +20,13 @@ div.card h3 {
 	padding: 0.625rem;
 	width: 70%;
 	margin: 15%;
+}
+
+@media screen and (max-width: 56rem) {
+	li.card {
+		flex-basis: 100%;
+		height: 12.5rem;
+		margin-bottom: 1rem;
+		width: 100%;
+	}
 }

@@ -1,5 +1,7 @@
 :root {
 	--color-black: hsl(0, 0%, 0%);
+	--color-black-transparent: hsla(0, 0%, 0%, 0.75);
+	--color-grey-transparent: hsl(0, 0%, 50%, 0.3);
 	--color-blue: hsl(210, 79%, 35%);
 	--color-orange: hsl(27, 98%, 48%);
 	--color-red: hsl(0, 80%, 38%);

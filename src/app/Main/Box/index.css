@@ -14,21 +14,34 @@ main > section.box {
 
 main > section.box > div {
 	align-items: center;
-	background-color: hsla(0, 0%, 100%, 0.75);
+	background-color: hsla(0, 0%, 100%, 0.8);
 	color: var(--color-body-text, var(--color-black, hsl(0, 0%, 0%)));
 	display: flex;
 	flex-direction: column;
-	height: 16.75rem;
-	justify-content: space-evenly;
-	width: 44.5rem;
+	height: clamp(12.50rem, calc(9.03rem + 17.35vw), 16.75rem);
+	justify-content: center;
+	width: min(44.5rem, 90vw);
 }
 
 main > section.box h2 {
 	font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-	font-size: 3rem;
+	font-size: clamp(1.75rem, calc(0.73rem + 5.10vw), 3.00rem);
 	font-weight: 400;
-	line-height: 1.167;
+	line-height: 1.5;
 	margin: 0 auto;
 	padding: 0;
 	text-align: center;
+}
+
+main > section.box p {
+	font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+	font-size: clamp(1.00rem, calc(0.59rem + 2.04vw), 1.50rem);
+	margin: 0 0 1rem;
+	padding: 0;
+}
+
+main > section.box p.pre {
+	color: var(--color-blue, hsl(210, 79%, 35%));
+	font-weight: 600;
+	margin: 0;
 }

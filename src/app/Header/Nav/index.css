@@ -18,30 +18,143 @@ body > header > nav > ul {
 }
 
 body > header > nav > ul > li {
-	display: inline-block;
-	line-height: 1.75;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	height: 3rem;
 	text-align: right;
+	padding: 0 1rem;
+}
+
+body > header > nav > ul > li.icon-link {
+	border-radius: 1.5rem;
+	width: 3rem;
+	padding: 0;
 }
 
 body > header > nav > ul > li a {
-	align-items: center;
 	color: var(--color-header-nav-link, hsl(0, 0%, 100%));
+	height: 3rem;
+	min-width: 3rem;
+	align-items: center;
 	display: flex;
 	justify-content: center;
-	min-height: 3rem;
-	min-width: 3rem;
 	text-decoration: none;
 	text-transform: uppercase;
+	outline: 0;
 }
 
-body > header > nav > ul > li a .link-button {
+body > header > nav > ul > li:focus-within,
+body > header > nav > ul > li:hover {
+	border-color: var(--border-color-link-button, var(--color-orange, hsl(27, 99%, 28%)));
+}
+
+body > header > nav > ul > li.link-button {
 	border: 1px solid var(--border-color-link-button, var(--color-orange, hsl(27, 99%, 28%)));
-	border-radius: 4px;
+}
+
+body > header > nav > ul > li.link-button a {
 	color: var(--color-link-button, var(--color-orange, hsl(27, 99%, 28%)));
-	padding: 0.3125rem 0.9375rem;
 }
 
 body > header > nav > ul > li a svg {
 	height: 1.5rem;
 	width: 1.5rem;
+}
+
+button#menu-toggle {
+	background-color: transparent;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	display: none;
+	height: 48px;
+	width: 48px;
+	padding: 12px;
+	position: fixed;
+	top: 1rem;
+	right: min(3rem, 5vw);
+}
+
+button#menu-toggle svg path {
+	fill: white;
+}
+
+button#menu-toggle span.x {
+	display: none;
+}
+
+@media screen and (max-width: 56rem) {
+	body > header > nav {
+		border-left: 1px solid var(--color-grey-transparent, hsl(0, 0%, 50%, 0.3));
+		background-color: white;
+		flex-basis: 0;
+		position: fixed;
+		right: -16rem;
+		top: 0;
+		bottom: 0;
+		overflow: auto;
+		width: 16rem;
+		transition: right 0.5s ease-in-out;
+		padding: 2rem  calc(min(3rem, 5vw) - 10px) 2rem min(2rem, 5vw);
+	}
+
+	body > header > nav.open {
+		transition: right 0.5s ease-in-out;
+		right: 0;
+	}
+
+	body > header > nav > ul {
+		align-items: flex-end;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		margin-top: 4rem;
+	}
+
+	body > header > nav > ul > li {
+		align-items: center;
+		display: flex;
+		justify-content: flex-end;
+		text-align: right;
+		width: fit-content;
+	}
+
+	body > header > nav > ul > li a {
+		color: black;
+	}
+
+	body > header > nav > ul > li a .link-button {
+		margin-right: calc(-1 * calc(1rem + 1px));
+	}
+
+	body > header > nav > ul > li a svg path {
+		fill: black;
+	}
+
+	button#menu-toggle {
+		border-color: transparent;
+		display: block;
+		outline: 0;
+	}
+
+	nav.open button#menu-toggle {
+		border-color: transparent;
+		border-radius: 24px;
+	}
+
+	nav.open button#menu-toggle svg {
+		display: none;
+	}
+
+	nav.open button#menu-toggle span.x {
+		display: inline-block;
+		font-size: 32px;
+		line-height: 0.55;
+	}
+
+	button#menu-toggle:focus-within,
+	button#menu-toggle:hover,
+	nav.open button#menu-toggle:focus-within,
+	nav.open 		button#menu-toggle:hover {
+		border-color: var(--color-orange);
+	}
 }

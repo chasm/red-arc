@@ -1,5 +1,7 @@
 article.services {
+	border-top: 1px solid var(--color-grey-transparent, hsl(0, 0%, 50%, 0.3));
 	padding: 2rem;
+	width: 100%;
 }
 
 article.services h2 {
@@ -9,6 +11,7 @@ article.services h2 {
 	font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 	font-size: 2.125rem;
 	font-weight: 400;
+	margin-bottom: 1rem;
 	text-transform: uppercase;
 }
 
@@ -17,4 +20,18 @@ article.services h2 {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+@media screen and (max-width: 56rem) {
+	.service-cards {
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+
+	article.services h2 {
+		justify-content: center;
+	}
 }

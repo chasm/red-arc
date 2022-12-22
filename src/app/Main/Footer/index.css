@@ -14,7 +14,7 @@ body > main > footer > section {
 	flex-direction: column;
 	gap: 0;
 	justify-content: flex-start;
-	padding: 2rem 3rem;
+	padding: 2rem min(3rem, 5vw);
 	width: 100vw;
 }
 
@@ -28,12 +28,24 @@ body > main > footer > section h2 {
 }
 
 body > main > footer > section .social-links {
+	list-style-type: none;
 	align-items: center;
 	display: flex;
 	gap: 0;
 	justify-content: flex-start;
-	margin-left: -0.75rem;
+	margin: 0 0 0 -0.75rem;
+	padding: 0.5rem 0;
 	width: 100vw;
+}
+
+body > main > footer > section .social-links li {
+	border: 1px solid transparent;
+	border-radius: 1.5rem;
+}
+
+body > main > footer > section .social-links li:focus-within,
+body > main > footer > section .social-links li:hover {
+	border-color: var(--border-color-link-button, var(--color-orange, hsl(27, 99%, 28%)));
 }
 
 body > main > footer > section .social-links a {

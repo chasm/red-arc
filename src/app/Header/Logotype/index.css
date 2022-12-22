@@ -6,8 +6,8 @@ body > header > h1.logotype {
 	letter-spacing: 0.00735em;
 }
 
-body > header > h1.logotype .ved {
-	color: var(--color-logo-ved, hsl(0, 0%, 100%));
+body > header > h1.logotype .red {
+	color: var(--color-logo-red, hsl(0, 0%, 100%));
 }
 
 body > header > h1.logotype .arc {
